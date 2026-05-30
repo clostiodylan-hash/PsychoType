@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsychoType | Decode Your Writing Mind</title>
+  <meta name="description" content="PsychoType is a stylish writing personality experience that turns typing patterns into playful psychological insights.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary navigation">
+    <nav class="nav-shell">
+      <a class="brand" href="#hero" aria-label="PsychoType home">
+        <span class="brand-mark">Ψ</span>
+        <span>PsychoType</span>
+      </a>
+      <div class="nav-links" aria-label="Page sections">
+        <a href="#how-it-works">How it works</a>
+        <a href="#insights">Insights</a>
+        <a href="#demo">Demo</a>
+      </div>
+      <a class="nav-cta" href="#demo">Start scan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Typing psychology, reimagined</p>
+        <h1>Decode the personality behind every keystroke.</h1>
+        <p class="hero-copy">PsychoType transforms rhythm, word choice, and emotional tone into a vivid profile of how you think, decide, and communicate.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#demo">Try the live prompt</a>
+          <a class="button secondary" href="#how-it-works">Explore the method</a>
+        </div>
+        <ul class="trust-list" aria-label="PsychoType highlights">
+          <li>Private by design</li>
+          <li>Instant analysis</li>
+          <li>Playful insights</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-label="Animated personality dashboard preview">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <article class="profile-card">
+          <div class="card-topline">
+            <span class="pulse"></span>
+            <span>Live cognitive signature</span>
+          </div>
+          <h2>The Pattern-Seeker</h2>
+          <p>You write with deliberate bursts, balancing intuition with structured reasoning.</p>
+          <div class="meter-group">
+            <div>
+              <span>Analytical</span>
+              <strong>88%</strong>
+            </div>
+            <div class="meter"><span style="width: 88%"></span></div>
+          </div>
+          <div class="meter-group">
+            <div>
+              <span>Expressive</span>
+              <strong>74%</strong>
+            </div>
+            <div class="meter"><span style="width: 74%"></span></div>
+          </div>
+          <div class="trait-cloud">
+            <span>curious</span>
+            <span>precise</span>
+            <span>inventive</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="section-heading">
+        <p class="eyebrow">Three signal layers</p>
+        <h2>How PsychoType reads your writing style</h2>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <h3>Capture your flow</h3>
+          <p>Respond to short prompts while PsychoType watches cadence, hesitation, and momentum.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">02</span>
+          <h3>Map linguistic signals</h3>
+          <p>Sentence shape, vocabulary, and sentiment are blended into a distinct communication fingerprint.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <h3>Reveal your archetype</h3>
+          <p>Receive a memorable type profile with strengths, watchouts, and collaboration tips.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="insights">
+      <div>
+        <p class="eyebrow">Insight dashboard</p>
+        <h2>Built for self-discovery, teams, and creative rituals.</h2>
+        <p class="section-copy">Use PsychoType before journaling, brainstorming, hiring workshops, or team retros to spark better conversations about how people think and express ideas.</p>
+      </div>
+      <div class="insight-panel">
+        <div class="insight-row">
+          <span>Decision style</span>
+          <strong>Evidence-first</strong>
+        </div>
+        <div class="insight-row">
+          <span>Energy pattern</span>
+          <strong>Focused surges</strong>
+        </div>
+        <div class="insight-row">
+          <span>Collaboration clue</span>
+          <strong>Give context early</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="demo-card">
+        <div class="section-heading left">
+          <p class="eyebrow">Mini demo</p>
+          <h2>Type a few lines and generate a playful snapshot.</h2>
+          <p>Try a quick reflection below. This client-side sample reacts to length and tone cues to preview the product experience.</p>
+        </div>
+        <label for="writingSample">Your writing sample</label>
+        <textarea id="writingSample" rows="6" placeholder="Write about a challenge you solved, a decision you made, or a goal you are chasing..."></textarea>
+        <button class="button primary" id="analyzeButton" type="button">Analyze my type</button>
+      </div>
+      <aside class="result-card" aria-live="polite">
+        <p class="eyebrow">Your snapshot</p>
+        <h3 id="resultTitle">Awaiting signal</h3>
+        <p id="resultCopy">Add a writing sample to reveal your PsychoType archetype.</p>
+        <div class="result-stat">
+          <span>Signal confidence</span>
+          <strong id="confidence">0%</strong>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 PsychoType. Designed to make self-reflection feel electric.</p>
+    <a href="#hero">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
